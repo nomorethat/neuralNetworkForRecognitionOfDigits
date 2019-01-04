@@ -1,0 +1,487 @@
+/* шрифты */
+
+@font-face {
+    font-family: ubuntu; /* Гарнитура шрифта */
+    src: url(../fonts/ubuntu.ttf); /* Путь к файлу со шрифтом */
+}
+
+
+
+
+body{
+	background: #eeeeee;
+	margin: 0;
+	padding: 0;
+}
+
+#clear{
+	clear: both;
+}
+
+#header_admin_workspace{
+	height: 70px;
+	background-color: #111111;
+	color: #fff;
+	text-align: center;
+}
+
+#header_admin_workspace span{
+	font-family: ubuntu;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 70px;
+}
+
+footer{
+	margin-top: 400px;
+	width: 100%;
+	height: 20px;
+	background: #111111;
+}
+
+
+
+/* ------УПРАВЛЕНИЕ НЕЙРОННОЙ СЕТЬЮ ---------*/
+
+
+
+#neuro_workspace #menu{
+	width: 1100px;
+	height: 60px;
+	border: 1px solid #000;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+#neuro_workspace #menu #show_recognizing{
+	width: 550px;
+	height: 100%;
+	float: left;
+	background-color: #222222;
+	font-family: ubuntu;
+	font-size: 26px;
+	font-weight: 900;
+	line-height: 60px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+#neuro_workspace #menu #show_education{
+	width: 550px;
+	height: 100%;
+	float: right;
+	background-color: #555555;
+	font-family: ubuntu;
+	font-size: 26px;
+	font-weight: 900;
+	line-height: 60px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}	
+	
+
+
+
+
+
+/* распознать */
+
+#neuro_workspace #to_recognize{
+	width: 1080px;
+	margin-left: 130px;
+}
+
+#neuro_workspace #to_recognize h3{
+	font-family: Verdana;
+	font-size: 22px;
+	margin-top: 60px;
+	margin-left: -10px;
+	padding: 10px;
+}
+
+#neuro_workspace #to_recognize #table_form_of_to_recognize{
+	vertical-align: top;
+}
+
+#neuro_workspace #to_recognize #table_form_of_to_recognize #title_size_of_fragments_for_recognizing{
+	margin-left: 30px;
+	margin-top: 210px;
+}
+
+#neuro_workspace #to_recognize #image-preview{
+	width: 200px;
+}
+
+#neuro_workspace #to_recognize #image-preview #preview{
+	width: inherit;
+}
+
+#neuro_workspace #to_recognize .file-upload {
+	 float: left;
+     position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+     overflow: hidden; /* Все что выходит за пределы - скрываем */
+     width: 210px; /* Задаем ширину кнопки выбора файла */
+     height: 20px; /* Задаем высоту кнопки выбора файла */ 
+     background: #6da047;
+     padding: 5px;
+     color: #fff;
+     text-align: center;
+	 background-color: #111111;
+	 margin-left: 30px;
+	 margin-right: 10px;
+}
+
+#neuro_workspace #to_recognize .file-upload:hover {
+     background: #333333;
+}
+
+#neuro_workspace #to_recognize .file-upload input[type="file"]{
+    display: none; /* Обязательно скрываем настоящий Input File */
+}
+
+     /* Растягиваем label на всю возможную площадь блока .file-upload */
+#neuro_workspace #to_recognize .file-upload label {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+}
+
+#neuro_workspace #to_recognize .file-upload span {
+     line-height: 28px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+}
+
+#neuro_workspace #to_recognize #file_name{
+	position: relative;
+	top: -10;
+	left: 0;
+	margin-top: 16px;
+	color: #000;
+}
+
+#neuro_workspace #to_recognize #submit_of_recognizing{
+	width: 220px;
+	height: 30px;
+	border: 1px solid #000;
+	background: #111111;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	/* margin-top: 30px; */
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+#neuro_workspace #to_recognize #submit_of_recognizing:hover{
+	background: #333333;
+}
+
+#neuro_workspace #to_recognize #div_for_img_of_product{
+	width: 200px;
+	height: 300px;
+	border: 1px solid #000;
+	float: left;
+}
+
+#neuro_workspace #to_recognize #div_for_img_of_product img{
+	width: inherit;
+	height: inherit;
+}
+
+#neuro_workspace #to_recognize #file_upload  input[type="file"]{
+	display: none;
+}
+
+#neuro_workspace #to_recognize #file_upload{
+	position: relative;
+	overflow: hidden;
+	width: 210px;
+	height: 20px;
+	background: #111111;
+	color: #fff;
+	text-align: center;
+	left: 30px;
+	top: 10px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#neuro_workspace #to_recognize #file_upload:hover{
+	background: #333333;
+}
+
+
+#neuro_workspace #to_recognize #file_upload label {
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#neuro_workspace #to_recognize #file_upload span {
+	line-height: 30px;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#file_name{
+	position: relative;
+	top: -15;
+	left: 260;
+	color: #000;
+}
+
+#neuro_workspace #to_recognize span{
+	font-family: Verdana;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+#sdfsdf{
+	height: 10px;
+}
+
+
+
+
+
+
+/* обучить */
+
+#neuro_workspace #to_educate{
+	display: none;
+	margin-left: 130px;
+	width: 1000px;
+}
+
+#neuro_workspace #to_educate h3{
+	font-family: Verdana;
+	font-size: 22px;
+	margin-top: 60px;
+	margin-left: -10px;
+	padding: 10px;
+}
+
+#neuro_workspace #to_educate #enter_the_category_name_in_education{
+	
+	width: 400px;
+	height: 30px;
+	/* margin-left: 20px; */
+	font-family: Verdana;
+	font-size: 16px;
+	border: 1px solid #000;
+}
+
+#neuro_workspace #to_educate .title_of_the_setting{
+	line-height: 30px;
+	font-weight: 600;
+}
+
+#neuro_workspace #to_educate #file_name_in_education{
+	position: relative;
+	top: -18;
+	left: 0;
+	margin-top: 36px;
+	color: #000;
+}
+
+#neuro_workspace #to_educate #itetation_of_education{
+	width: 40px;
+	height: 26px;
+	border: 1px solid #000;
+	margin-top: 10px;
+	/* font-size: 23px; */
+}
+
+#neuro_workspace #to_educate #submit_to_educate{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #000;
+	background: #111111;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	/* position: relative; */
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#neuro_workspace #to_educate #submit_to_educate:hover{
+	background: #333333;
+}
+
+#neuro_workspace #to_educate #submit_to_clear_weights{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #000;
+	background: #111111;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	/* position: relative; */
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#neuro_workspace #to_educate #submit_to_clear_weights:hover{
+	background: #333333;
+}
+
+#neuro_workspace #to_educate  .learning{
+	display: none;
+	margin-left: 10px;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: 900;
+	color: #333333;
+}
+
+#neuro_workspace #to_educate .message_error{
+	display: inline-block;
+	margin-left: 10px;
+	color: #ce0011;
+}
+
+
+
+
+
+/* переобучить */
+
+#to_reeducate{
+	display: none;
+}
+
+article #admin_workspace #to_reeducate h3{
+	font-family: Verdana;
+	font-size: 20px;
+	margin-top: 60px;
+	margin-left: -10px;
+	padding: 10px;
+}
+
+article #admin_workspace #to_reeducate #reeducation_the_category{
+	width: 400px;
+	height: 30px;
+	/* margin-left: 20px; */
+	font-family: Verdana;
+	font-size: 16px;
+	border: 1px solid #000;
+}
+
+article #admin_workspace #to_reeducate #enter_the_category_name_in_education{
+	
+	width: 400px;
+	height: 30px;
+	/* margin-left: 20px; */
+	font-family: Verdana;
+	font-size: 16px;
+	border: 1px solid #000;
+}
+
+article #admin_workspace #to_reeducate .file-upload {
+	 float: left;
+     position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+     overflow: hidden; /* Все что выходит за пределы - скрываем */
+     width: 210px; /* Задаем ширину кнопки выбора файла */
+     height: 20px; /* Задаем высоту кнопки выбора файла */ 
+     background: #6da047;
+     padding: 5px;
+     color: #fff;
+     text-align: center;
+	 background-color: #111111;
+	 /* margin-top: 10px; */
+	 margin-left: 0px;
+	 /* margin-right: 10px; */
+}
+
+article #admin_workspace #to_reeducate .file-upload:hover {
+     background: #333333;
+}
+
+article #admin_workspace #to_reeducate .file-upload input[type="file"]{
+    display: none; /* Обязательно скрываем настоящий Input File */
+}
+
+article #admin_workspace #to_reeducate .file-upload label {
+     /* Растягиваем label на всю возможную площадь блока .file-upload */
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+}
+
+article #admin_workspace #to_reeducate .file-upload span {
+     line-height: 28px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+}
+
+article #admin_workspace #to_reeducate .title_of_the_setting{
+	line-height: 30px;
+	font-weight: 600;
+}
+
+article #admin_workspace #to_reeducate #file_name{
+	position: relative;
+	top: -18;
+	left: 0;
+	margin-top: 36px;
+	color: #000;
+}
+
+article #admin_workspace #to_reeducate #itetation_of_education{
+	width: 40px;
+	height: 26px;
+	border: 1px solid #000;
+	margin-top: 10px;
+	/* font-size: 23px; */
+}
+
+
+
+article #admin_workspace #to_reeducate #submit_to_educate{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #000;
+	background: #111111;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	/* position: relative; */
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+article #admin_workspace #to_reeducate #submit_to_educate:hover{
+	background: #333333;
+}
+
+article #admin_workspace #to_reeducate #submit_to_clear_weights{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #000;
+	background: #111111;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	/* position: relative; */
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+article #admin_workspace #to_reeducate #submit_to_clear_weights:hover{
+	background: #333333;
+}
+
+
